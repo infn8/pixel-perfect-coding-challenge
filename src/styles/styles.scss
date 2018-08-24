@@ -1,6 +1,6 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-
+@import url('https://use.typekit.net/uty8nfr.css');
 // Boostrap
 @import "~bootstrap/scss/functions";
 // Variable Overrides
@@ -40,6 +40,8 @@
 @import "~bootstrap/scss/carousel";
 @import "~bootstrap/scss/utilities";
 @import "~bootstrap/scss/print";
+
+@import "helpers";
 
 // Application Styles
 
