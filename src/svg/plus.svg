@@ -3,12 +3,14 @@
     <style>
       .cls-1 {
         fill: none;
-        stroke: #000;
-        stroke-width:4;
+        stroke: #fff;
+        stroke-width:10;
         stroke-miterlimit: 10;
       }
     </style>
   </defs>
-  <title>Artboard 1</title>
-  <polyline class="cls-1" points="7.5 28.75 50 71.25 92.5 28.75"/>
+  <g>
+    <line class="cls-1" x1="50" x2="50" y2="100"/>
+    <line class="cls-1" x1="99.5" y1="50" x2="0.5" y2="50"/>
+  </g>
 </svg>
