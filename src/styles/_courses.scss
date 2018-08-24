@@ -1,9 +1,92 @@
 .courses{
   .course {
-    // background: #0f0;
+    margin-bottom: $s2;
+    .course-title{
+      font-size: $font-size-sm;
+      line-height: 1;
+    }
     .course-body{
-      padding: map-get($spacers, 2);
-      padding-left: map-get($spacers, 3);
+      padding: $s1 $s2 $s1 $s3;
+      background-color: transparent;
+    }
+    .course-info,
+    .course-credit{
+      font-size: $font-size-sm;
+    }
+    .course-name {
+      margin-left: $s2;
+      padding-left: $s2;
+      border-left: 1px solid $gray-400;
+      color: $gray-400;
+    }
+    $alert-width:1rem;
+    .course-credit,
+    .course-alert{
+      display: flex;
+      justify-content: flex-end;
+
+    }
+    .course-alert{
+      span {
+        width: $alert-width;
+        display: inline-block;
+        position: relative;
+        background: $red;
+        border:1px solid $gray-800;
+        display: inline-block;
+        height: $alert-width;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+        border-radius: 50%;
+        font-size: 0.75rem;
+      }
+    }
+
+    $leftWidth: 3rem;
+    $iconWidth:1rem;
+    $iconShift: ($leftWidth - $iconWidth) / 2;
+    // $iconShift: 1px;
+    &.suggestion{
+      .course-credit{
+        color: $gray-400;
+        justify-content: flex-start;
+      }
+      border-left-width: $leftWidth;
+      border-left-color: $blue;
+      position: relative;
+      &:before{
+        content:"";
+        position: absolute;
+        top: 50%;
+        right: calc(100% + #{$iconShift}) ;
+        transform: translate(0,-50%);
+        width: $iconWidth;
+        height: $iconWidth;
+        // background-color: rgba($red, 0.5);
+        background-image: url(../svg/plus.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+    &.available{
+      border: 1px dashed $gray-400;
+      padding: $s2 $s3;
+      color: $gray-400;
+      .card-body {
+        padding: $s2 * 0.85 0;
+      }
+      .course-title{
+        line-height: 1;
+      }
     }
   }
+}
+$btn-color: darken($blue, 10%);
+.btn-course-submit{
+  box-shadow: 0 0 0 1px $blue, 0 0 0 2px $btn-color, ;
+
+  @include button-variant($btn-color, $btn-color);
+
 }

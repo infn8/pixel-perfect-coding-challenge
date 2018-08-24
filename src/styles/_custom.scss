@@ -1,6 +1,7 @@
 // Variable Overrides
 
-$font-family-sans-serif: 'Roboto', sans-serif;
+// $font-family-sans-serif: 'Roboto', sans-serif;
+$font-family-sans-serif: 'proxima-nova', sans-serif;
 
 $white   : #fff !default;
 $gray-100: #f8f9fa !default;
@@ -14,11 +15,13 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black   : #000 !default;
 $green   : #73BB2E !default;
+$blue    : #249FD7 !default;
 
 $progress-bg: $white !default;
 $body-bg    : $gray-100 !default;
 
 $custom-select-indicator-color: $gray-800 !default;
-$custom-select-indicator      : str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='#{$custom-select-indicator-color}' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E"), "#", "%23") !default;
+$custom-select-indicator      : url("../svg/arrow-down.svg");
+$custom-select-bg-size        : 10px 10px !default; // In pixels because image dimensions
 
 $callout-border-width: 0.5rem;
