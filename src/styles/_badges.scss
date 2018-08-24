@@ -1,0 +1,54 @@
+$circle-scalar: 2;
+.badge-circle {
+  position: relative;
+  .badge-circle-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100% * $circle-scalar;
+      height: 0;
+      padding-bottom: 100% * $circle-scalar;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .badge-circle-content {
+    position: relative;
+    z-index: 10;
+    font-size: 0.8rem;
+  }
+
+  @each $color, $value in $theme-colors {
+    &.badge-#{$color} {
+
+
+      background-color:transparent;
+      .badge-circle-bg:before {
+        background-color:$value;
+
+      }
+      &[href] {
+        @include hover-focus {
+          background-color: transparent;
+          .badge-circle-bg:before {
+            background-color:darken($value, 10%);
+
+          }
+        }
+      }
+
+
+    }
+  }
+
+
+}
+
+
