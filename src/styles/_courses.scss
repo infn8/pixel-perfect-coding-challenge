@@ -1,0 +1,9 @@
+.courses{
+  .course {
+    // background: #0f0;
+    .course-body{
+      padding: map-get($spacers, 2);
+      padding-left: map-get($spacers, 3);
+    }
+  }
+}

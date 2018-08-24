@@ -1,0 +1,24 @@
+// Variable Overrides
+
+$font-family-sans-serif: 'Roboto', sans-serif;
+
+$white   : #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black   : #000 !default;
+$green   : #73BB2E !default;
+
+$progress-bg: $white !default;
+$body-bg    : $gray-100 !default;
+
+$custom-select-indicator-color: $gray-800 !default;
+$custom-select-indicator      : str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='#{$custom-select-indicator-color}' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E"), "#", "%23") !default;
+
+$callout-border-width: 0.5rem;
