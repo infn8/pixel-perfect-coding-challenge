@@ -1,0 +1,8 @@
+.callout {
+  border-left-width: $callout-border-width;
+  @each $themeName, $themeValue in $theme-colors {
+    &.callout-#{$themeName} {
+      border-left-color: $themeValue;
+    }
+  }
+}
