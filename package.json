@@ -4,7 +4,7 @@
   "description": "Convert the following prototype to html, trying to match it as closely as possible. Use of preprocessor (sass or less) is encouraged. Utilize bootstrap as base framework and customize where necessary.",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server -d"
   },
   "repository": {
     "type": "git",

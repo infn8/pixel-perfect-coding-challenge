@@ -1,0 +1,40 @@
+.top-row{
+		font-size: 0.8em;
+	.text-nowrap{
+		// font-weight: 300;
+	}
+	.text-success{
+		font-weight: bold;
+		color:darken($success, 10%) !important;
+	}
+	.badge-danger{
+		margin-left: $s4 !important;
+		// font-weight: 300;
+	}
+	.text-muted {
+		// font-weight: 300;
+
+	}
+}
+.navbar{
+	.navbar-text{
+		font-size: 0.9em;
+	}
+	.custom-select {
+		// font-weight: 300;
+		color:$gray-600;
+		font-size: 0.9em;
+		padding-top: $s1;
+		padding-bottom: $s1;
+	}
+}
+.card-header {
+	h5{
+		font-weight: 600 !important;
+	}
+}
+.popover {
+	.popover-body{
+	  @include border-radius($popover-border-radius);
+	}
+}
