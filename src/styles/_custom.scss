@@ -25,3 +25,10 @@ $custom-select-indicator      : url("../svg/arrow-down.svg");
 $custom-select-bg-size        : 10px 10px !default; // In pixels because image dimensions
 
 $callout-border-width: 0.5rem;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1320px
+) !default;
