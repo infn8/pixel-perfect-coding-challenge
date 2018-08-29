@@ -1,8 +1,15 @@
 .callout {
-  border-left-width: $callout-border-width;
+  border-left-width: $callout-border-width !important;
+  border-left-style: solid;
+  overflow: hidden;
   @each $themeName, $themeValue in $theme-colors {
     &.callout-#{$themeName} {
-      border-left-color: $themeValue;
+      border-left-color: $themeValue !important;
+    }
+  }
+  @each $colorName, $colorValue in $colors {
+    &.callout-#{$colorName} {
+      border-left-color: $colorValue !important;
     }
   }
 }
